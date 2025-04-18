@@ -30,10 +30,13 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -198,7 +201,7 @@ img {
   background-color: #404bbf;
 }
 
-/* -------------MAIN-PART-------------- */
+/* -------------Advantages-------------- */
 
 .container-advantages {
   padding: 96px 0;
@@ -245,10 +248,16 @@ img {
   color: #434455;
 }
 
+/* ---------------Team--------------- */
+
 .section-team {
   background: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
   margin: 0 auto;
+}
+
+.section-team .container {
+  max-width: 290px;
 }
 
 .section-title {
@@ -264,8 +273,9 @@ img {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 72px 0;
   justify-content: center;
-  gap: 24px;
 }
 
 .team-list-item {
@@ -273,7 +283,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
 
 .content-team-list {
@@ -282,7 +292,6 @@ img {
 
 .content-title-team {
   margin-bottom: 8px;
-  text-align: center;
 }
 
 .text-team {
@@ -315,6 +324,8 @@ img {
 .back-icon-main:focus {
   background: #404bbf;
 }
+
+/* ---------------Portfolio---------------- */
 
 .section-portfolio {
   padding: 120px 0;
@@ -731,7 +742,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+
+  .section-team .container,
+  .footer .container {
+    max-width: 582px;
   }
 
   .content-title {
@@ -745,11 +761,23 @@ img {
   .advantages-list-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .content-title-team {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 
   .container-advantages {
@@ -784,5 +812,22 @@ img {
 
   .text {
     font-weight: 400;
+  }
+
+  .section-team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .section-team .container,
+  .footer .container {
+    max-width: 1128px;
   }
 }
