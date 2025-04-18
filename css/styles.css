@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-  max-width: 1158px;
+  width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -201,19 +201,7 @@ img {
 /* -------------MAIN-PART-------------- */
 
 .container-advantages {
-  padding: 120px 0;
-}
-
-.container-icons {
-  width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -229,26 +217,28 @@ img {
   overflow: hidden;
 }
 
-.advantages-list-item {
-  width: calc((100% - 72px) / 4);
+.container-icons {
+  display: none;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .content-title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -471,11 +461,11 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+/* .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 
 .modal {
   width: 408px;
@@ -737,4 +727,62 @@ img {
 .modal-close-btn:hover .footer-icon-close,
 .modal-close-btn:focus .footer-icon-close {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .content-title {
+    text-align: start;
+  }
+
+  .advantages-list {
+    gap: 72px 24px;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  .container-advantages {
+    padding: 120px 0;
+  }
+
+  .container-icons {
+    display: block;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .content-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .text {
+    font-weight: 400;
+  }
 }
