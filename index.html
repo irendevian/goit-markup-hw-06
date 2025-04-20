@@ -17,7 +17,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <header class="container-header">
+    <header class="container-header">
       <div class="container header-list">
         <nav class="nav-list">
           <a class="logo logo-first" href="./index.html"
@@ -47,8 +47,83 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-open">
+        <div>
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-4"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-links">
+              <li>
+                <a class="mob-menu-link-item current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-link-item" href="#portfolio">Portfolio</a>
+              </li>
+              <li><a class="mob-menu-link-item" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-contact-links">
+            <ul class="mob-contact-links-list">
+              <li>
+                <a
+                  class="mob-contact-link-item current"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mob-contact-link-item" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-icon-list">
+            <li class="soc-icon-item">
+              <a href="" class="back-icon-main">
+                <svg class="svg-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-icon-item">
+              <a href="" class="back-icon-main">
+                <svg class="svg-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-icon-item">
+              <a href="" class="back-icon-main">
+                <svg class="svg-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-icon-item">
+              <a href="" class="back-icon-main">
+                <svg class="svg-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Hero -->
       <section class="hero">

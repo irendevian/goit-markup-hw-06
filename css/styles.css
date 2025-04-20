@@ -80,11 +80,13 @@ img {
 .logo-header {
   color: #2e2f42;
   display: inline-block;
+  padding: 16px 0;
 }
 
 .menu-links {
   display: flex;
   gap: 40px;
+  display: none;
 }
 
 .menu-link-item {
@@ -129,6 +131,7 @@ img {
 .contact-links-list {
   display: flex;
   gap: 40px;
+  display: none;
 }
 
 .contact-link-item {
@@ -146,6 +149,86 @@ img {
 .contact-link-item:hover,
 .contact-link-item:focus {
   color: #404bbf;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu-close-btn {
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-menu-link-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mob-menu-link-item.current {
+  color: #404bbf;
+}
+
+.mob-contact-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mob-contact-link-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: block;
+  font-style: normal;
+}
+
+.mob-contact-link-item.current {
+  color: #404bbf;
+}
+
+.mob-soc-icon-list {
+  display: flex;
+  gap: 40px;
+  position: fixed;
+  bottom: 40px;
 }
 
 /* -------------HERO------------- */
@@ -854,6 +937,28 @@ img {
   .logo-main {
     display: inline-block;
   }
+
+  .logo-header {
+    padding: 24px 0;
+  }
+
+  .menu-links {
+    display: flex;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .contact-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link-item {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -959,5 +1064,15 @@ img {
   .footer-center {
     max-width: 208px;
     margin-right: 80px;
+  }
+
+  .contact-links-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .contact-link-item {
+      padding: 24px 0;
   }
 }
