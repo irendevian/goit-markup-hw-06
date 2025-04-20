@@ -567,7 +567,7 @@ img {
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -959,6 +959,10 @@ img {
   .contact-link-item {
     padding: 0;
   }
+
+  .footer-input {
+    width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1054,6 +1058,7 @@ img {
   .container-footer {
     flex-wrap: nowrap;
     gap: 0;
+    max-width: 1158px;
   }
 
   .footer-left {
@@ -1073,6 +1078,6 @@ img {
   }
 
   .contact-link-item {
-      padding: 24px 0;
+    padding: 24px 0;
   }
 }
