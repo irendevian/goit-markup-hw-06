@@ -626,8 +626,9 @@ img {
 } */
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  height: 95%;
+  overflow-y: auto;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -963,6 +964,10 @@ img {
   .footer-input {
     width: 264px;
   }
+
+  .modal {
+    width: 408px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1079,5 +1084,9 @@ img {
 
   .contact-link-item {
     padding: 24px 0;
+  }
+
+  .madal {
+    min-height: 584px;
   }
 }
